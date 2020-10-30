@@ -62,6 +62,10 @@ module.exports = {
     content: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js', 'nuxt.config.js'],
     options: {
       // Set whitelist in nuxt.config.js -> purgeCSS.whitelist: ['dark-mode', 'light-mode', 'btn', 'icon']
-    }
+  },
+  future: {
+      removeDeprecatedGapUtilities: true,
+      purgeLayersByDefault: true
+    },
   }
 }
